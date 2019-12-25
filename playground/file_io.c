@@ -38,7 +38,7 @@ void reallocMemory(){
   char * newchar;
   char buffer[50];
   // allocate memory for the variable
-  newchar = malloc(10*sizeof(char));
+  newchar = malloc(30*sizeof(char));
 
   // copy string
   strcpy(newchar, "initial text made before allocating memory\n");
@@ -49,6 +49,7 @@ void reallocMemory(){
   // concatenate string
   strcat(newchar," additional content added\n");
   printf("%s", newchar);
+  printf("length of newchar %d", (int)strlen(newchar));
   free(newchar);
 }
 
@@ -102,7 +103,7 @@ void compareString(){
 int main(){
   pointerFunction();
 
-  reallocMemory();
+  //reallocMemory();
 
   writeFile();
 
