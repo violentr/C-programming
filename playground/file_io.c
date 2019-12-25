@@ -111,6 +111,11 @@ int main(){
 
   printFactorial(TEST_VAR);
 
+  char * command = "cd Downloads";
+  char * search = "cd";
+  char * dirname = not_substr(command, search);
+  printf("[+] result: %s\n", dirname);
+
   // variable size is global
   printf("string is %d chr long\n", size);
 
